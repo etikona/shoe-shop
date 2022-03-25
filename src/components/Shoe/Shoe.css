@@ -1,0 +1,10 @@
+.main-shop{
+    display: flex;
+    justify-content: space-between;
+}
+.buying-part{
+    background-color:darkseagreen;
+}
+.for-me{
+    
+}

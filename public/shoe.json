@@ -1,0 +1,38 @@
+[
+    {
+      "id": "623df8cb140ad53de0a48108",
+      "picture": "shoe.webp",
+      "age": 27,
+      "name": "Lily Lowe"
+    },
+    {
+      "id": "623df8cb4770a0d0552f40a6",
+      "picture": "img/shoe1.webp",
+      "age": 20,
+      "name": "Barry Hughes"
+    },
+    {
+      "id": "623df8cb229ba0df0f62948e",
+      "picture": "http://placehold.it/32x32",
+      "age": 27,
+      "name": "Lorena Jimenez"
+    },
+    {
+      "id": "623df8cb7b7a91b1351f4ff2",
+      "picture": "http://placehold.it/32x32",
+      "age": 36,
+      "name": "Miles Gould"
+    },
+    {
+      "id": "623df8cb88e48270f08c66c8",
+      "picture": "http://placehold.it/32x32",
+      "age": 39,
+      "name": "Lucia Cantu"
+    },
+    {
+      "id": "623df8cb68a7f75650386464",
+      "picture": "http://placehold.it/32x32",
+      "age": 28,
+      "name": "Hodge Colon"
+    }
+  ]
