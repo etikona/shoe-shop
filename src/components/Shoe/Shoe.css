@@ -1,10 +1,22 @@
 .main-shop{
     display: flex;
     justify-content: space-between;
+    background-color: darkcyan;
 }
 .buying-part{
     background-color:darkseagreen;
 }
-.for-me{
-    
+.choose{
+    background-color: forestgreen;
+    color:white;
+}
+.again{
+    background-color: brown;
+    color:white;
+}
+.cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin: 10px;
 }
