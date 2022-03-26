@@ -9,8 +9,11 @@ const Shoe = () => {
     const [shoe, setShoe] =useState([]);
     const [random, setRandom] =useState([]);
 
-    const item =() =>{
+    const item =(shoe) =>{
+      const newRandom = [...random, shoe]
+      console.log(random);
       for(const product of random){
+  
         const chooseItem = Math.floor(Math.random(0) * product.length)
         setRandom(chooseItem);
       }      
@@ -55,11 +58,11 @@ const Shoe = () => {
   }
 </div>
 <div>
-           < button onClick={item()}   className='choose'>CHOOSE ONE FOR ME 
+           < button onClick={item(shoe)}   className='choose'>CHOOSE ONE FOR ME 
 
 </button>
 <br />
-<button  className='again'>CHOOSE AGAIN</button>
+<button onClick={item([])} className='again'>CHOOSE AGAIN</button>
         </div>
     </div>
         </div>
