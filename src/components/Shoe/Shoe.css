@@ -6,6 +6,7 @@
 }
 .buying-part{
     background-color:darkseagreen;
+    position: sticky;
 }
 .choose{
     background-color: forestgreen;

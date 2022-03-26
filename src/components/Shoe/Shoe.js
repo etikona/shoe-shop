@@ -5,18 +5,20 @@ import './Shoe.css'
 
 const Shoe = () => {
     const [shoes, setShoes] =useState([]);
+    const [shoe, setShoe] =useState([]);
+    
+
     useEffect(()=>{
       fetch('shoe.json')
       .then(res => res.json())
       .then(data =>  setShoes(data))
     } ,[])
 
-    const [shoe, setShoe] =useState([])
-
+    
     const AddCart =(name) =>{
       const chooseShoe = [...shoe, name]
       setShoe(chooseShoe);
-      console.log(chooseShoe);
+      // console.log(chooseShoe);
     }
     return (
         <div className="main-shop">
@@ -26,6 +28,7 @@ const Shoe = () => {
          key={shoe.id}
           data={shoe}
           AddCart={AddCart}
+
           ></Cart>)
     }
 </div>
@@ -33,11 +36,17 @@ const Shoe = () => {
             <div className='buying-part'>
         
 <h3> Select your choice</h3>
-{
-  // shoe.map(products => <Cart pd={products}></Cart>)
-}
-
-<button className='choose'>CHOOSE ONE FOR ME</button>
+<div>
+  {
+    shoe.map(item => <h1 key={item.id}>
+      {item.name}
+      <img src={item.img} alt="" />
+      </h1>)
+  }
+</div>
+<button className='choose'>CHOOSE ONE FOR ME 
+cart={}
+</button>
 <br />
 <button className='again'>CHOOSE AGAIN</button>
 
