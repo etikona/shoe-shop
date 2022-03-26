@@ -11,8 +11,12 @@ const Shoe = () => {
       .then(data =>  setShoes(data))
     } ,[])
 
+    const [shoe, setShoe] =useState([])
+
     const AddCart =(name) =>{
-      console.log(name)
+      const chooseShoe = [...shoe, name]
+      setShoe(chooseShoe);
+      console.log(chooseShoe);
     }
     return (
         <div className="main-shop">
@@ -27,7 +31,12 @@ const Shoe = () => {
 </div>
             
             <div className='buying-part'>
-<h3> Select you want</h3>
+        
+<h3> Select your choice</h3>
+{
+  // shoe.map(products => <Cart pd={products}></Cart>)
+}
+
 <button className='choose'>CHOOSE ONE FOR ME</button>
 <br />
 <button className='again'>CHOOSE AGAIN</button>
