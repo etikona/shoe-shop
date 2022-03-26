@@ -10,12 +10,19 @@ const Shoe = () => {
       .then(res => res.json())
       .then(data =>  setShoes(data))
     } ,[])
+
+    const AddCart =(name) =>{
+      console.log(name)
+    }
     return (
         <div className="main-shop">
-<h2>Choose one</h2>
 <div className='cart'>
 {
-      shoes.map(shoe => <Cart key={shoe.id} data={shoe}></Cart>)
+      shoes.map(shoe => <Cart
+         key={shoe.id}
+          data={shoe}
+          AddCart={AddCart}
+          ></Cart>)
     }
 </div>
             
