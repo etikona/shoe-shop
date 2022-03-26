@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Shoe Shop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My live Site link [Create React App](https://superlative-concha-3355bf.netlify.app).
 
 ## Available Scripts
 
