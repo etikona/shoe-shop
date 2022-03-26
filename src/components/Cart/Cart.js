@@ -8,6 +8,7 @@ const Cart = ( {data, AddCart} ) => {
   // console.log(data);
  
     return (
+    <div className='container'>
         <div className='cart-container'>
           <div className='img-container'>
           <img src={img} alt=""/>
@@ -20,7 +21,12 @@ const Cart = ( {data, AddCart} ) => {
                Add to Cart</p>
            </button>
         </div>
-        </div>
+    </div>
+    
+    </div>
+
+  
+ 
     );
 };
 

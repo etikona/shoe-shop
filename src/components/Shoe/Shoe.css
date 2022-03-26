@@ -7,14 +7,7 @@
 .buying-part{
     background-color:darkseagreen;
     position: sticky;
-}
-.choose{
-    background-color: forestgreen;
-    color:white;
-}
-.again{
-    background-color: brown;
-    color:white;
+    top:0;
 }
 .cart{
     display: grid;

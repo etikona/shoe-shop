@@ -1,12 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import Choose from '../Choose/Choose';
 // import Cart from '../Cart/Cart';
 import './Shoe.css'
 
 const Shoe = () => {
     const [shoes, setShoes] =useState([]);
     const [shoe, setShoe] =useState([]);
-    
+    const [random, setRandom] =useState([]);
+
+    const item =() =>{
+      for(const product of random){
+        const chooseItem = Math.floor(Math.random(0) * product.length)
+        setRandom(chooseItem);
+      }      
+    }
+
 
     useEffect(()=>{
       fetch('shoe.json')
@@ -20,6 +29,7 @@ const Shoe = () => {
       setShoe(chooseShoe);
       // console.log(chooseShoe);
     }
+ 
     return (
         <div className="main-shop">
 <div className='cart'>
@@ -32,7 +42,7 @@ const Shoe = () => {
           ></Cart>)
     }
 </div>
-            
+        
             <div className='buying-part'>
         
 <h3> Select your choice</h3>
@@ -44,13 +54,14 @@ const Shoe = () => {
       </h1>)
   }
 </div>
-<button className='choose'>CHOOSE ONE FOR ME 
-cart={}
+<div>
+           < button onClick={item()}   className='choose'>CHOOSE ONE FOR ME 
+
 </button>
 <br />
-<button className='again'>CHOOSE AGAIN</button>
-
-            </div>
+<button  className='again'>CHOOSE AGAIN</button>
+        </div>
+    </div>
         </div>
     );
 };
